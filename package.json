@@ -1,0 +1,54 @@
+{
+  "name": "pranaveda-zen-flow",
+  "version": "1.0.0",
+  "description": "PranVeda Zen Flow - A comprehensive wellness and meditation application",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "validate-env": "node scripts/validate-env.js",
+    "setup-env": "echo 'Copy frontend/frontend.env.example to frontend/frontend.env and backend/backend.env.example to backend/backend.env'",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:backend": "cd backend && npm run lint",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm run test",
+    "test:backend": "cd backend && npm run test",
+    "clean": "npm run clean:frontend && npm run clean:backend",
+    "clean:frontend": "cd frontend && rm -rf node_modules dist",
+    "clean:backend": "cd backend && rm -rf node_modules dist",
+    "postinstall": "npm run validate-env"
+  },
+  "keywords": [
+    "meditation",
+    "wellness",
+    "mindfulness",
+    "react",
+    "vite",
+    "typescript",
+    "firebase",
+    "supabase"
+  ],
+  "author": "PranVeda Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/pranaveda-zen-flow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/pranaveda-zen-flow/issues"
+  },
+  "homepage": "https://github.com/your-username/pranaveda-zen-flow#readme"
+}

@@ -1,0 +1,21 @@
+# Audio Files Directory
+
+This directory contains audio files for the PranVeda application.
+
+## Required Files:
+- ui-click.mp3
+- navigation.mp3  
+- notification.mp3
+- pause.mp3
+- resume.mp3
+- achievement.mp3
+- levelup.mp3
+- badge_unlock.mp3
+- task_complete.mp3
+- meditation_complete.mp3
+
+## Note:
+Audio files are not included in the repository to reduce size.
+Add your own audio files here or the app will work without sound feedback.
+
+The AudioManager will gracefully handle missing files and continue functioning.
